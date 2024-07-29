@@ -22,16 +22,13 @@ body {
 }
 
 .logo {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   align-items: flex-start;
   border-radius: 100px;
 }
 
-
 .img {
-
-
   align-self: center;
 }
 
@@ -69,6 +66,13 @@ button {
   align-self: center;
   margin-top: 10px;
   border-radius: 5px;
+  cursor: url("photos/airplanebtn.png"), auto;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #000000;
+  transition: 1s;
 }
 
 .entries {
