@@ -14,6 +14,15 @@ app.get("/", function (request, response) {
 //     response.json(images);
 //   });
 
+const img1 =
+  "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg";
+
+const img2 =
+  "https://www.sandals.co.uk/blog/content/images/2022/06/Header-_-1-Blue-Hole-Jamaica-1.jpg";
+
+const img3 =
+  "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1124332706v2.jpggit";
+
 app.listen(8080, function () {
   console.log("Listening to port 8080");
 });
