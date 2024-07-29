@@ -4,6 +4,11 @@ body {
   flex-direction: column;
   color: white;
   font-family: arial;
+  min-height: 300px;
+}
+
+.tagline {
+  align-self: center;
 }
 
 .Navbar {
@@ -11,6 +16,15 @@ body {
   border-radius: 10px;
   position: relative;
   align-self: center;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+  align-items: flex-start;
 }
 
 .imgcontainer {
@@ -26,17 +40,38 @@ body {
 .image3 {
 }
 
+form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .usertext {
   width: 300px;
   align-self: center;
+  text-align: center;
+  margin: 5px;
 }
 
 .messagetext {
   width: 300px;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
 }
 
 .submitbutton {
   width: 300px;
+  align-self: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.refreshbutton {
+  width: 300px;
+  align-self: center;
+  margin: 50px;
+  border-radius: 5px;
 }
 
 .entries {
