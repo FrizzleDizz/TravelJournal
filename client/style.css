@@ -1,0 +1,48 @@
+body {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar {
+  border: solid black;
+  border-radius: 10px;
+  position: relative;
+  align-self: center;
+}
+
+.imgcontainer {
+  align-self: center;
+}
+
+.image1 {
+}
+
+.image2 {
+}
+
+.image3 {
+}
+
+.usertext {
+  width: 300px;
+  align-self: center;
+}
+
+.messagetext {
+  width: 300px;
+}
+
+.submitbutton {
+  width: 300px;
+}
+
+.entries {
+}
+
+.entryitems {
+}
+
+footer {
+  position: absolute bottom;
+}
