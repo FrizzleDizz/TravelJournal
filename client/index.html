@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Travel Journal</title>
-</head>
-<body>
-    <header></header>
-
-    <main></main>
-
-    <footer></footer>
-    
-</body>
+  </head>
+  <body>
+    <h1>Travel Journal 🗺️</h1>
+    <h3>Share your favourite country below!</h3>
+    <section class="img">
+      <div id="img-1"></div>
+      <div id="img-2"></div>
+      <div id="img-3"></div>
+    </section>
+    <div>
+      <form>
+        <label>Username</label>
+        <input name="setup" required />
+        <label>Message</label>
+        <input name="setup" placeholder="countryyy!" required />
+        <button>Submit</button>
+        <button>Refresh</button>
+      </form>
+    </div>
+  </body>
 </html>
