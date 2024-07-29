@@ -25,9 +25,10 @@ body {
   height: 200px;
   width: 200px;
   align-items: flex-start;
+  border-radius: 100px;
 }
 
-.imgcontainer {
+.img {
   align-self: center;
 }
 
@@ -60,17 +61,10 @@ form {
   margin: 5px;
 }
 
-.submitbutton {
+button {
   width: 300px;
   align-self: center;
   margin-top: 10px;
-  border-radius: 5px;
-}
-
-.refreshbutton {
-  width: 300px;
-  align-self: center;
-  margin: 50px;
   border-radius: 5px;
 }
 
@@ -81,5 +75,5 @@ form {
 }
 
 footer {
-  position: absolute bottom;
+  text-align: center;
 }
