@@ -2,6 +2,8 @@ body {
   background-color: gray;
   display: flex;
   flex-direction: column;
+  color: white;
+  font-family: arial;
 }
 
 .Navbar {
