@@ -21,12 +21,12 @@ body {
   text-align: center;
 }
 
-.messages {
+.messagebox {
   display: flex;
   justify-content: center;
 }
 
-li {
+.messages {
   background-color: rgb(160, 160, 160);
   text-align: center;
   width: 500px;
