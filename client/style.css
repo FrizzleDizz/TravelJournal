@@ -29,7 +29,7 @@ nav ul {
   display: flex;
   list-style: none;
   margin-top: -10px;
-  margin-right: -20px;
+  margin-right: -10px;
 }
 
 nav ul li a {
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #1d3461;
+  color: #228CDB;
   transition: 0.5s;
 }
 
@@ -68,6 +68,17 @@ nav ul li a:hover {
 .image3 {
 } */
 
+#imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  width: 20%;
+  align-self: center;
+}
+
 .messagebox {
   display: flex;
   justify-content: center;
@@ -92,16 +103,6 @@ nav ul li a:hover {
   margin-left: -20px;
 }
 
-#imgContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-img {
-  width: 20%;
-  align-self: center;
-}
 
 /* Tagline */
 
@@ -159,7 +160,7 @@ button:hover {
 .entryitems {
 }
 
-.messagebox {
+.messagetext {
   display: flex;
   justify-content: center;
 }
