@@ -12,40 +12,54 @@
     <title>Travel Journal</title>
   </head>
   <body>
-    <img
-      class="logo"
-      src="./photos/logo.png"
-      alt=""
-      title="Logo"
-      tabindex="0"
-    />
-    <h1 class="Navbar" title="Title" tabindex="0">✈️ Travel Journal 🗺️</h1>
-    <section class="img" title="Images" tabindex="0">
-      <div id="img-1" title="ImageOne" tabindex="0"></div>
-      <div id="img-2" title="ImageTwo" tabindex="0"></div>
-      <div id="img-3" title="ImageThree" tabindex="0"></div>
-    </section>
-    <h3 class="tagline" title="Favourite Country" tabindex="0">
-      Share your favourite country below!
-    </h3>
+    <div id="header">
+      <nav>
+        <img src="photos/logo.png" class="logo"/>
+        <ul>
+          <li><a href="#header">Header</a></li>
+          <li><a href="#navbar">Title</a></li>
+          <li><a href="#tagline">Form</a></li>
+          <li><a href="#copyright">Footer</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="navbar">
+      <h1 class="Navbar" title="Title" tabindex="0">✈️ Travel Journal 🗺️</h1>
+      <section class="img" title="Images" tabindex="0">
+        <div id="img-1" title="ImageOne" tabindex="0"></div>
+        <div id="img-2" title="ImageTwo" tabindex="0"></div>
+        <div id="img-3" title="ImageThree" tabindex="0"></div>
+      </section>
+    </div>
+    <div id="tagline">
+      <h3 class="tagline" title="Favourite Country" tabindex="0">
+        Share your favourite country below!
+      </h3>
 
-    <form>
-      <label class="usertext" title="Username" tabindex="0">Username</label>
-      <input class="usertext" name="username" required placeholder="Username" />
-      <label class="messagetext" title="Message" tabindex="0">Message</label>
-      <input
-        class="messagetext"
-        name="message"
-        placeholder="Countryyy!"
-        required
-      />
-      <button class="btn" tabindex="0">Submit</button>
-    </form>
-
-    <footer>
-      <div class="copyright" title="Copyright" tabindex="0">
-        <p>&#169; 2024</p>
-      </div>
-    </footer>
+      <form>
+        <label class="usertext" title="Username" tabindex="0">Username</label>
+        <input
+          class="usertext"
+          name="username"
+          required
+          placeholder="Username"
+        />
+        <label class="messagetext" title="Message" tabindex="0">Message</label>
+        <input
+          class="messagetext"
+          name="message"
+          placeholder="Countryyy!"
+          required
+        />
+        <button class="btn" tabindex="0">Submit</button>
+      </form>
+    </div>
+    <div id="copyright">
+      <footer>
+        <div class="copyright" title="Copyright" tabindex="0">
+          <p>&#169; 2024</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
