@@ -3,12 +3,12 @@ import dotenv from "dotenv";
 import cors from "cors";
 import pg from "pg";
 
-
 const app = express();
 dotenv.config();
 app.use(cors());
+app.use(express.json()); // this line lets us use the "body" from the request
 
-const db = new pg.Pool({ connectionString: process.env.DATABASE_URL});
+const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 
 app.get("/", function (request, response) {
   response.json("Hello?");
@@ -33,7 +33,7 @@ app.get("/images", function (request, response) {
 });
 
 // message get
-app.get("/travel", async function (request, response) {
+app.get("/message", async function (request, response) {
   // get the existing messages from the database
   const result = await db.query(`SELECT * FROM travel`);
   const messages = result.rows;
@@ -42,15 +42,23 @@ app.get("/travel", async function (request, response) {
 
 // post to message database
 app.post("/message", async function (request, response) {
-// retrieve the information from the form
-console.log(request.body);
-console.log(request.body.username);
-// here we would add input to the database
-await db.query(`INSERT INTO messages (emoji, username, message) VALUES ($1, $2)`, [request.body.emoji, request.body.username, request.body.message])
-response.json("Travel entry added!");
-});
+  const { username, message } = request.body;
+  // retrieve the information from the form
+  console.log("post route body", request.body);
+  // console.log(request.body.username);
+  // here we would add input to the database
 
+  await db.query(`INSERT INTO travel (username, message) VALUES ($1, $2)`, [
+    username,
+    message,
+  ]);
+  response.json("Travel entry added!");
+});
 
 app.listen(8080, function () {
   console.log("Listening to port 8080");
 });
+
+// html review container
+// fetch request
+// append
