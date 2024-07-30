@@ -9,13 +9,11 @@ body {
   min-width: 300px;
 }
 
-/* Logo */
-
-.logo {
-  height: 125px;
-  width: 125px;
-  align-items: flex-start;
-  border-radius: 100px;
+.pagelinks {
+  background-color: rgb(83, 83, 83);
+  border-bottom-left-radius: 20px;
+  border-top: solid black;
+  border-bottom: solid black;
 }
 
 /* Nav */
@@ -30,6 +28,8 @@ nav ul {
   float: right;
   display: flex;
   list-style: none;
+  margin-top: -10px;
+  margin-right: -20px;
 }
 
 nav ul li a {
@@ -50,9 +50,7 @@ nav ul li a:hover {
 #navbar {
   border: solid black;
   border-radius: 10px;
-
   align-self: center;
-  padding: 20px;
   width: 350px;
   text-align: center;
 }
@@ -69,6 +67,30 @@ nav ul li a:hover {
 
 .image3 {
 } */
+
+.messagebox {
+  display: flex;
+  justify-content: center;
+}
+
+.messages {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.logo {
+  height: 175px;
+  width: 175px;
+  position: fixed;
+  border-radius: 100px;
+  border: solid white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: -20px;
+}
 
 #imgContainer {
   display: flex;
@@ -149,6 +171,7 @@ button:hover {
   border-radius: 20px;
   list-style-type: none;
 }
+
 
 /* Footer */
 
