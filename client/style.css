@@ -59,7 +59,7 @@ nav ul li a:hover {
 
 /* Images */
 
-.img {
+/* .img {
   align-self: center;
 }
 
@@ -70,6 +70,17 @@ nav ul li a:hover {
 }
 
 .image3 {
+} */
+
+#imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  width: 20%;
+  align-self: center;
 }
 
 /* Tagline */
