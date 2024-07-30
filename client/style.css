@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   color: white;
   font-family: arial;
-  min-height: 300px;
+  min-width: 300px;
 }
 
 .tagline {
@@ -14,17 +14,30 @@ body {
 .Navbar {
   border: solid black;
   border-radius: 10px;
-  position: relative;
+
   align-self: center;
   padding: 20px;
   width: 500px;
   text-align: center;
 }
 
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
 .logo {
   height: 175px;
   width: 175px;
-  align-items: flex-start;
+  position: fixed;
   border-radius: 100px;
 }
 
@@ -82,5 +95,11 @@ button:hover {
 }
 
 footer {
+  position: fixed;
+  background-color: #000000;
   text-align: center;
+  bottom: 0;
+  align-self: center;
+  width: 100%;
+  height: 40px;
 }
