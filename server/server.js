@@ -10,9 +10,9 @@ app.get("/", function (request, response) {
   response.json("Hello?");
 });
 
-// app.get("/images", function (request, response) {
-//     response.json(images);
-//   });
+app.get("/images", function (request, response) {
+  response.json(images);
+});
 
 const images = [
   "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg",
