@@ -24,7 +24,7 @@ form.addEventListener("submit", async function (event) {
 
   // get the form inputs
   const formData = new FormData(form);
-  const formValues = Object.fromEntries(formData);
+  const formValues = Object.fromEntries(formData.entries());
 
   console.log(formValues);
 
