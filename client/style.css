@@ -9,13 +9,11 @@ body {
   min-width: 300px;
 }
 
-/* Logo */
-
-.logo {
-  height: 125px;
-  width: 125px;
-  align-items: flex-start;
-  border-radius: 100px;
+.pagelinks {
+  background-color: rgb(83, 83, 83);
+  border-bottom-left-radius: 20px;
+  border-top: solid black;
+  border-bottom: solid black;
 }
 
 /* Nav */
@@ -30,6 +28,8 @@ nav ul {
   float: right;
   display: flex;
   list-style: none;
+  margin-top: -10px;
+  margin-right: -20px;
 }
 
 nav ul li a {
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #1D3461;
+  color: #1d3461;
   transition: 0.5s;
 }
 
@@ -50,13 +50,11 @@ nav ul li a:hover {
 #navbar {
   border: solid black;
   border-radius: 10px;
-
   align-self: center;
   padding: 20px;
   width: 350px;
   text-align: center;
 }
-
 
 .messagebox {
   display: flex;
@@ -77,22 +75,6 @@ nav ul li a:hover {
   position: fixed;
   border-radius: 100px;
 }
-
-
-
-
-/* .img {
-  align-self: center;
-}
-
-.image1 {
-}
-
-.image2 {
-}
-
-.image3 {
-} */
 
 #imgContainer {
   display: flex;
@@ -151,14 +133,6 @@ button:hover {
   color: #fff;
   background-color: #000000;
   transition: 1s;
-}
-
-/* Entries */
-
-.entries {
-}
-
-.entryitems {
 }
 
 /* Footer */
