@@ -1,3 +1,5 @@
+/* HTML Page */
+
 body {
   background-color: gray;
   display: flex;
@@ -7,26 +9,55 @@ body {
   min-height: 300px;
 }
 
-.tagline {
-  align-self: center;
+/* Logo */
+
+.logo {
+  height: 125px;
+  width: 125px;
+  align-items: flex-start;
+  border-radius: 100px;
 }
 
-.Navbar {
+/* Nav */
+
+nav {
+  background-color: gray;
+  width: 100%;
+  height: 92px;
+}
+
+nav ul {
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  line-height: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #1D3461;
+  transition: 0.5s;
+}
+
+/* Travel Journal Heading */
+
+#navbar {
   border: solid black;
   border-radius: 10px;
   position: relative;
   align-self: center;
   padding: 20px;
-  width: 500px;
+  width: 350px;
   text-align: center;
 }
 
-.logo {
-  height: 175px;
-  width: 175px;
-  align-items: flex-start;
-  border-radius: 100px;
-}
+/* Images */
 
 /* .img {
   align-self: center;
@@ -52,11 +83,21 @@ img {
   align-self: center;
 }
 
+/* Tagline */
+
+#tagline {
+  align-self: center;
+}
+
+/* Form */
+
 form {
   align-self: center;
   display: flex;
   flex-direction: column;
 }
+
+/* Type Username */
 
 .usertext {
   width: 300px;
@@ -65,6 +106,8 @@ form {
   margin: 5px;
 }
 
+/* Type Message Text */
+
 .messagetext {
   width: 300px;
   align-self: center;
@@ -72,12 +115,14 @@ form {
   margin: 5px;
 }
 
+/* Submit Button */
+
 button {
   width: 300px;
   align-self: center;
   margin-top: 10px;
   border-radius: 5px;
-  cursor: url("photos/airplanebtn.png"), auto;
+  cursor: url("photos/planebtn.png"), auto;
 }
 
 button:hover {
@@ -86,11 +131,15 @@ button:hover {
   transition: 1s;
 }
 
+/* Entries */
+
 .entries {
 }
 
 .entryitems {
 }
+
+/* Footer */
 
 footer {
   text-align: center;
