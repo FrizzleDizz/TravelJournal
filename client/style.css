@@ -55,6 +55,19 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* .img {
+  align-self: center;
+}
+
+.image1 {
+}
+
+.image2 {
+}
+
+.image3 {
+} */
+
 .messagebox {
   display: flex;
   justify-content: center;
@@ -138,6 +151,28 @@ button:hover {
   transition: 1s;
 }
 
+/* Entries */
+
+.entries {
+}
+
+.entryitems {
+}
+
+.messagebox {
+  display: flex;
+  justify-content: center;
+}
+
+.messages {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+
 /* Footer */
 
 footer {
@@ -148,4 +183,5 @@ footer {
   align-self: center;
   width: 100%;
   height: 40px;
+  padding: 5px 0;
 }
