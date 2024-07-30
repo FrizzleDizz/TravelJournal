@@ -28,7 +28,7 @@ body {
   border-radius: 100px;
 }
 
-.img {
+/* .img {
   align-self: center;
 }
 
@@ -39,6 +39,17 @@ body {
 }
 
 .image3 {
+} */
+
+#imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  width: 20%;
+  align-self: center;
 }
 
 form {
