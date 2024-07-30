@@ -29,12 +29,8 @@ nav ul {
   display: flex;
   list-style: none;
   margin-top: -10px;
-
   margin-right: -20px;
   float: right;
-
-  margin-right: -10px;
-
 }
 
 nav ul li a {
@@ -46,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #228CDB;
+  color: #228cdb;
   transition: 0.5s;
 }
 
@@ -84,17 +80,14 @@ img {
   align-self: center;
 }
 
-.messagebox {
-  display: flex;
-  justify-content: center;
-}
-
 .messages {
   background-color: rgb(160, 160, 160);
   text-align: center;
   width: 500px;
   border-radius: 20px;
   list-style-type: none;
+  display: flex;
+  align-self: center;
 }
 
 .logo {
@@ -107,7 +100,6 @@ img {
   border-bottom-left-radius: 0px;
   margin-left: -20px;
 }
-
 
 /* Tagline */
 
@@ -177,7 +169,6 @@ button:hover {
   border-radius: 20px;
   list-style-type: none;
 }
-
 
 /* Footer */
 
