@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   color: white;
   font-family: arial;
-  min-height: 300px;
+  min-width: 300px;
 }
 
 /* Logo */
@@ -50,14 +50,36 @@ nav ul li a:hover {
 #navbar {
   border: solid black;
   border-radius: 10px;
-  position: relative;
+
   align-self: center;
   padding: 20px;
   width: 350px;
   text-align: center;
 }
 
-/* Images */
+
+.messagebox {
+  display: flex;
+  justify-content: center;
+}
+
+.messages {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.logo {
+  height: 175px;
+  width: 175px;
+  position: fixed;
+  border-radius: 100px;
+}
+
+
+
 
 /* .img {
   align-self: center;
@@ -142,5 +164,11 @@ button:hover {
 /* Footer */
 
 footer {
+  position: fixed;
+  background-color: #000000;
   text-align: center;
+  bottom: 0;
+  align-self: center;
+  width: 100%;
+  height: 40px;
 }
