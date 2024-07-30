@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 
-ul {
+.messages {
   display: flex;
   justify-content: center;
 }
