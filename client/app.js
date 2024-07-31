@@ -3,7 +3,7 @@ const messageList = document.getElementById("messageList");
 
 async function getImages() {
   // make the fetch
-  const res = await fetch("https://traveljournal-qahi.onrender.com");
+  const res = await fetch("https://traveljournal-qahi.onrender.com/images");
 
   // get the json from the response
   const data = await res.json();
@@ -19,7 +19,9 @@ async function getImages() {
 getImages();
 
 async function getMessages() {
-  const messages = await fetch("https://traveljournal-qahi.onrender.com");
+  const messages = await fetch(
+    "https://traveljournal-qahi.onrender.com/message"
+  );
 
   console.log(messages);
 
@@ -51,13 +53,16 @@ form.addEventListener("submit", async function (event) {
   console.log(formValues);
 
   // make an API call when we submit the form
-  const response = await fetch("https://traveljournal-qahi.onrender.com", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formValues),
-  });
+  const response = await fetch(
+    "https://traveljournal-qahi.onrender.com/message",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formValues),
+    }
+  );
   const data = await response.json();
   console.log(data);
   getMessages();
