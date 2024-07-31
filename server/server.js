@@ -24,12 +24,12 @@ const images = [
   "https://earth.esa.int/web/earth-watching/content/documents/257246/1608677/Barcelona.jpg",
 ];
 
-app.get("/", function (request, response) {
-  response.json("Hello?");
-});
-
 app.get("/images", function (request, response) {
   response.json(images);
+});
+
+app.get("/", function (request, response) {
+  response.json("Hello?");
 });
 
 // message get
