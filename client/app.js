@@ -3,7 +3,7 @@ const messageList = document.getElementById("messageList");
 
 async function getImages() {
   // make the fetch
-  const res = await fetch("http://localhost:8080/images");
+  const res = await fetch("https://traveljournal-qahi.onrender.com");
 
   // get the json from the response
   const data = await res.json();
@@ -19,7 +19,7 @@ async function getImages() {
 getImages();
 
 async function getMessages() {
-  const messages = await fetch ("http://localhost:8080/message");
+  const messages = await fetch("https://traveljournal-qahi.onrender.com");
 
   console.log(messages);
 
@@ -39,7 +39,6 @@ async function getMessages() {
 
 getMessages();
 
-
 const form = document.querySelector("form");
 
 form.addEventListener("submit", async function (event) {
@@ -52,7 +51,7 @@ form.addEventListener("submit", async function (event) {
   console.log(formValues);
 
   // make an API call when we submit the form
-  const response = await fetch("http://localhost:8080/message", {
+  const response = await fetch("https://traveljournal-qahi.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -64,7 +63,6 @@ form.addEventListener("submit", async function (event) {
   getMessages();
 });
 
-
 //async function deleteMessage () {}
 
 //add element & fetch get end point to receive messages
@@ -73,9 +71,8 @@ form.addEventListener("submit", async function (event) {
 const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 const buttons = document.querySelectorAll("button");
 
-buttons.forEach(button => {
+buttons.forEach((button) => {
   button.addEventListener("click", () => {
     audio.play();
   });
 });
-
