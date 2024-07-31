@@ -23,7 +23,9 @@
         <ul class="pagelinks">
           <li title="Header"><a href="#header">Header</a></li>
           <li title="Title"><a href="#navbar">Title</a></li>
-          <li title="Form"><a href="#tagline">Form</a></li>
+          <li title="Title"><a href="#images">Images</a></li>
+          <li title="Form"><a href="#form">Form</a></li>
+          <li title="Form"><a href="#messages">Messages</a></li>
           <li title="Footer"><a href="#copyright">Footer</a></li>
         </ul>
       </nav>
@@ -32,38 +34,34 @@
       <h1 class="Navbar" title="Title" tabindex="0">✈️ Travel Journal 🗺️</h1>
     </div>
     <br />
-    <div id="tagline" class="tagline" >
+    <div class="tagline">
       <h3 title="Favourite Country" tabindex="0">
         Share your favourite country below!
       </h3>
     </div>
-      <br />
-      <div id="img-container" class="imgContainer"></div>
-      <br>
-      <br>
-      <form>
-        <label class="usertext" title="Username" tabindex="0">Username</label>
-        <input
-          class="usertext"
-          name="username"
-          required
-          placeholder="Username"
-        />
-        <label class="messagetext" title="Message" tabindex="0">Message</label>
-        <input
-          class="messagetext"
-          name="message"
-          placeholder="Countryyy!"
-          required
-        />
-        <button class="btn" tabindex="0">Submit</button>
-      </form>
-
-    </div>
+    <br />
+    <div id="images"></div>
+    <div id="img-container" class="imgContainer"></div>
+    <br />
+    <br />
+    <form>
+      <div id="form"></div>
+      <label class="usertext" title="Username" tabindex="0">Username</label>
+      <input class="usertext" name="username" required placeholder="Username" />
+      <label class="messagetext" title="Message" tabindex="0">Message</label>
+      <input
+        class="messagetext"
+        name="message"
+        placeholder="Countryyy!"
+        required
+      />
+      <button class="btn" tabindex="0">Submit</button>
+    </form>
+    <div id="messages"></div>
     <ul class="messages" id="messageList">
       <li>Nathan: Japan is my favourite place to visit!</li>
     </ul>
-    
+
     <div id="copyright">
       <footer>
         <div class="copyright" title="Copyright" tabindex="0">

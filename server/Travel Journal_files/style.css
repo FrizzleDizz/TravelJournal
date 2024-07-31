@@ -1,0 +1,192 @@
+/* HTML Page */
+
+body {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: arial;
+  min-width: 300px;
+  min-height: 2000px;
+}
+
+.pagelinks {
+  background-color: rgb(83, 83, 83);
+  border-bottom-left-radius: 20px;
+  border-top: solid black;
+  border-bottom: solid black;
+}
+
+/* Nav */
+
+nav {
+  background-color: gray;
+  width: 100%;
+  height: 92px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: -10px;
+  margin-right: -20px;
+  float: right;
+}
+
+nav ul li a {
+  color: #fff;
+  line-height: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #228cdb;
+  transition: 0.5s;
+}
+
+/* Travel Journal Heading */
+
+#navbar {
+  border: solid black;
+  border-radius: 10px;
+  align-self: center;
+  width: 350px;
+  text-align: center;
+}
+
+.imgContainer {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.messages {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.logo {
+  height: 175px;
+  width: 175px;
+  position: fixed;
+  border-radius: 100px;
+  border: solid white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: -20px;
+}
+
+/* Tagline */
+
+.tagline {
+  align-self: center;
+}
+
+/* Form */
+
+form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Type Username */
+
+.usertext {
+  width: 300px;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Type Message Text */
+
+.messagetext {
+  width: 300px;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Submit Button */
+
+button {
+  width: 300px;
+  align-self: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: url("photos/planebtn.png"), auto;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #000000;
+  transition: 1s;
+}
+
+.messagetext {
+  display: flex;
+  justify-content: center;
+}
+
+.messages {
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #000000;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.icons {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  height: 5px;
+}
+
+.icons a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.icons a:hover {
+  color: #228cdb;
+  transform: translateY(-5px);
+}
