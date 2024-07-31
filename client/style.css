@@ -10,7 +10,7 @@ body {
   color: white;
   font-family: arial;
   min-width: 300px;
-  min-height: 2000px;
+  min-height: 1800px;
 }
 
 .pagelinks {
@@ -152,10 +152,12 @@ button:hover {
 
 /* Footer */
 
+
 footer {
+  position: absolute;
+  bottom: -930px;
   background-color: #000000;
   text-align: center;
-  bottom: -500px;
   align-self: center;
   width: 100%;
   height: 40px;
