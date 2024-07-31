@@ -64,4 +64,18 @@ form.addEventListener("submit", async function (event) {
   getMessages();
 });
 
+
 //async function deleteMessage () {}
+
+//add element & fetch get end point to receive messages
+//make it look pretty
+
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+
