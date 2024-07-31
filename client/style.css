@@ -56,28 +56,17 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* .img {
-  align-self: center;
-}
-
-.image1 {
-}
-
-.image2 {
-}
-
-.image3 {
-} */
-
-#imgContainer {
+.imgContainer {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
+  align-self: center;
 }
 
 img {
-  width: 20%;
-  align-self: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .messages {
@@ -103,7 +92,7 @@ img {
 
 /* Tagline */
 
-#tagline {
+.tagline {
   align-self: center;
 }
 
@@ -147,14 +136,6 @@ button:hover {
   color: #fff;
   background-color: #000000;
   transition: 1s;
-}
-
-/* Entries */
-
-.entries {
-}
-
-.entryitems {
 }
 
 .messagetext {
