@@ -20,7 +20,8 @@ getImages();
 
 async function getMessages() {
   const messages = await fetch(
-    "https://traveljournal-qahi.onrender.com/message"
+    "https://traveljournal-qahi.onrender.com/message",
+    (mode = "no-cors")
   );
 
   console.log(messages);
