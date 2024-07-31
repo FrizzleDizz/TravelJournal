@@ -1,4 +1,7 @@
 /* HTML Page */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: gray;
