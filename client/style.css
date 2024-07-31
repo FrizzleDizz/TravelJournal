@@ -70,14 +70,20 @@ img {
 }
 
 .messages {
-  background-color: rgb(160, 160, 160);
   text-align: center;
   width: 500px;
-  border-radius: 20px;
   list-style-type: none;
   display: flex;
   align-self: center;
   flex-direction: column;
+  justify-content: center;
+}
+
+.messages li {
+  background-color: rgb(160, 160, 160);
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 .logo {
@@ -137,19 +143,6 @@ button:hover {
   color: #fff;
   background-color: #000000;
   transition: 1s;
-}
-
-.messagetext {
-  display: flex;
-  justify-content: center;
-}
-
-.messages {
-  background-color: rgb(160, 160, 160);
-  text-align: center;
-  width: 500px;
-  border-radius: 20px;
-  list-style-type: none;
 }
 
 /* Footer */
