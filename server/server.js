@@ -35,7 +35,7 @@ app.get("/", function (request, response) {
 // message get
 app.get("/message", async function (request, response) {
   // get the existing messages from the database
-  const result = await db.query(`SELECT * FROM travel`);
+  const result = await db.query(`SELECT * FROM travel`); 
   const messages = result.rows;
   response.json(messages);
 });
