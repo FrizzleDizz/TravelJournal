@@ -70,6 +70,7 @@ form.addEventListener("submit", async function (event) {
 //add element & fetch get end point to receive messages
 //make it look pretty
 
+// Click Sound Effect
 const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 const buttons = document.querySelectorAll("button");
 
@@ -79,3 +80,8 @@ buttons.forEach(button => {
   });
 });
 
+//Scroll Element Header
+window.addEventListener("scroll", function() {
+  const nav = this.document.querySelector("nav");
+  nav.classList.toggle("Sticky", window.scrollY > 0);
+});

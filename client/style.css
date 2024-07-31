@@ -20,25 +20,27 @@ body {
 /* Nav */
 
 nav {
-  background-color: gray;
+  position: fixed;
   width: 100%;
   height: 92px;
+  background: transparent;
 }
 
 nav ul {
   display: flex;
   list-style: none;
   margin-top: -10px;
-  margin-right: -20px;
+  margin-right: -5px;
   float: right;
 }
 
 nav ul li a {
   color: #fff;
   line-height: 30px;
-  padding: 12px 30px;
+  padding: 12px 25px;
   font-size: 16px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -156,7 +158,7 @@ footer {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 1px 0;
   background: #000000;
   font-weight: 300;
   margin-top: 20px;
