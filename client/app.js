@@ -1,4 +1,5 @@
 const imgContainer = document.getElementById("img-container");
+const messageList = document.getElementById("messageList");
 
 async function getImages() {
   // make the fetch
@@ -16,6 +17,28 @@ async function getImages() {
 }
 
 getImages();
+
+async function getMessages() {
+  const messages = await fetch ("http://localhost:8080/message");
+
+  console.log(messages);
+
+  const data = await messages.json();
+
+  console.log(data);
+
+  messageList.innerHTML = "";
+
+  for (let i = 0; i < data.length; i++) {
+    console.log(data[i].message);
+    const message = document.createElement("li");
+    message.textContent = `${data[i].username} ${data[i].message}`;
+    messageList.appendChild(message);
+  }
+}
+
+getMessages();
+
 
 const form = document.querySelector("form");
 
@@ -38,7 +61,11 @@ form.addEventListener("submit", async function (event) {
   });
   const data = await response.json();
   console.log(data);
+  getMessages();
 });
+
+
+//async function deleteMessage () {}
 
 //add element & fetch get end point to receive messages
 //make it look pretty
@@ -51,3 +78,4 @@ buttons.forEach(button => {
     audio.play();
   });
 });
+
