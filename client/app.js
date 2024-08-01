@@ -82,4 +82,3 @@ buttons.forEach((button) => {
     audio.play();
   });
 });
-

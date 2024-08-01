@@ -102,6 +102,11 @@ img {
   margin-left: -20px;
 }
 
+.logo2 {
+  display: hidden;
+  width: 0px;
+}
+
 /* Tagline */
 
 .tagline {
