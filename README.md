@@ -1,6 +1,7 @@
 # Travel Journal Guestbook
 
 https://traveljournal-1.onrender.com
+It may take a few minutes to fully load with the images.
 
 ## A fully functioning form submission app for adding you’re favourite country, created using Javascript, HTML, CSS, Express and SQL.
 
